@@ -1,11 +1,11 @@
 # my_own_collection
 
 ## Шаг 1. В виртуальном окружении создайте новый my_own_module.py файл.  
-/home/admin-oleg/Desktop/Netology/my_own_collection/ansible/library/my_own_module.py  
+https://github.com/olegmanzhay/my_own_collection/blob/main/ansible/library/my_own_module.py
 
 ## Шаг 3-5. Заполните файл в соответствии с требованиями Ansible так, чтобы он выполнял основную задачу: module должен создавать текстовый файл на удалённом хосте по пути, определённом в параметре path, с содержимым, определённым в параметре content.    
 
-Код до плейбуки: /home/admin-oleg/Desktop/Netology/my_own_collection/ansible/test_module.yml
+Код до плейбуки: https://github.com/olegmanzhay/my_own_collection/blob/main/ansible/test_module.yml
 
 ```
 def run_module():
@@ -64,8 +64,8 @@ ok: [localhost] => {"changed": false, "result": "File already exists with correc
 ```
 
 ## Шаг 15  
-ссылки на collection: /home/admin-oleg/Desktop/Netology/my_own_collection/ansible/my_own_namespace/yandex_cloud_elk  
-tar.gz : /home/admin-oleg/Desktop/Netology/my_own_collection/ansible/my_own_namespace/my_own_namespace-yandex_cloud_elk-1.0.0.tar.  
+ссылки на collection: https://github.com/olegmanzhay/my_own_collection/tree/main/ansible/my_own_namespace/yandex_cloud_elk
+tar.gz: https://github.com/olegmanzhay/my_own_collection/blob/main/ansible/my_own_namespace/my_own_namespace-yandex_cloud_elk-1.0.0.tar.gz
 
 
 Результат работы модуля (иденпотентность проверена)  
