@@ -1,0 +1,15 @@
+---
+- name: Test installed collection
+  hosts: localhost
+  connection: local
+
+  tasks:
+    - name: Use custom module directly
+      my_own_namespace.yandex_cloud_elk.my_own_module:
+        path: /tmp/test_from_installed_collection.txt
+        content: "This file was created using the installed collection"
+      register: module_result
+
+    - name: Show module result
+      debug:
+        var: module_result

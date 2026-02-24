@@ -1,0 +1,14 @@
+---
+- name: Test my_own_module (simple version)
+  hosts: localhost
+  connection: local
+  tasks:
+    - name: Create test file
+      my_own_module:
+        path: /tmp/my_simple_file.txt
+        content: "This is simple content from my module."
+      register: result
+
+    - name: Display result
+      debug:
+        var: result

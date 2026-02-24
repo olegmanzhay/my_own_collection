@@ -1,0 +1,7 @@
+---
+# Default parameters for file_creator role
+file_path: /tmp/default_created_file.txt
+file_content: |
+  This file was created by the file_creator role.
+  Default parameters were used.
+  You can override these defaults in your playbook.
