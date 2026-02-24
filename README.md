@@ -1,9 +1,9 @@
 # my_own_collection
 
-Шаг 1. В виртуальном окружении создайте новый my_own_module.py файл.  
+## Шаг 1. В виртуальном окружении создайте новый my_own_module.py файл.  
 /home/admin-oleg/Desktop/Netology/my_own_collection/ansible/library/my_own_module.py  
 
-Шаг 3-5. Заполните файл в соответствии с требованиями Ansible так, чтобы он выполнял основную задачу: module должен создавать текстовый файл на удалённом хосте по пути, определённом в параметре path, с содержимым, определённым в параметре content.    
+## Шаг 3-5. Заполните файл в соответствии с требованиями Ansible так, чтобы он выполнял основную задачу: module должен создавать текстовый файл на удалённом хосте по пути, определённом в параметре path, с содержимым, определённым в параметре content.    
 
 Код до плейбуки: /home/admin-oleg/Desktop/Netology/my_own_collection/ansible/test_module.yml
 
@@ -49,13 +49,13 @@ def run_module():
 
 ```
 
-При таком варианте кода нет иденпотентности, так как при выполнении модуля происходит 
+## При таком варианте кода нет иденпотентности, так как при выполнении модуля происходит 
 ```
 TASK [Create test file] ******************************************************************************************************************************************************************************
 changed: [localhost] => {"changed": true, "result": "File created/overwritten successfully"}
 ```
 
-Шаг 6. Проверьте через playbook на идемпотентность.
+## Шаг 6. Проверьте через playbook на идемпотентность.
 
 После корректировки my_own_collection.py получил 
 ```
@@ -63,7 +63,7 @@ TASK [Create test file] ********************************************************
 ok: [localhost] => {"changed": false, "result": "File already exists with correct content"}
 ```
 
-Шаг 15  
+## Шаг 15  
 ссылки на collection: /home/admin-oleg/Desktop/Netology/my_own_collection/ansible/my_own_namespace/yandex_cloud_elk  
 tar.gz : /home/admin-oleg/Desktop/Netology/my_own_collection/ansible/my_own_namespace/my_own_namespace-yandex_cloud_elk-1.0.0.tar.  
 
